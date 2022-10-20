@@ -1,55 +1,65 @@
-/* Flexbox */
+/* ================================= 
+  Base Styles
+==================================== */
 
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
 
 @media (min-width: 769px) {
-    .main-header,
-    .main-nav,
-    .primary-content
-    .secondary-content {
-        display: flex;
-        flex-direction: column;
-    }
-    .main-header {
+
+	.main-header,
+	.nav,
+	.row, 
+    .col
+    {
+		display:flex;
+	}
+
+	.main-header {
+		flex-direction: row;
+		align-items: center;
+	}
+
+    .col {
+		flex: 1 200px;
         flex-direction:column;
-        align-items:center;
-    }
+	}
+    .button {
+        margin-top: auto;
+        align-self:flex-end;
+  }
+  
+    .secondary-nav {
+         justify-content:center;
+}
+
 }
 
 @media (min-width: 1025px) {
-    .main-header {
-        flex-direction: row;
-        justify-content:space-between;
-    }   
+
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	    }
+    .secondary-nav {
+        display:none;
+    }
+    .row {
+        flex-direction:row;
+        flex-wrap:wrap;
+       
+        
+    }
     .secondary-content {
-        flex-direction: column;
-        flex-basis: 1;
+        display: flex;
+        flex-direction: row;
+    }
+    .button {
+        margin-top: auto;
     }
 
 }
-
-
-.secondary-nav {
-    display:flex;
-    justify-content: center;
-}
-
-.primary-content {
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    align-items: stretch;
-    justify-content: center;
-    
- }
- .button {
-    margin-top: auto;
- }
-
- .item {
-    flex: 1 200px;
- }
-
-
- .article {
-    flex: 1 200px;
- }

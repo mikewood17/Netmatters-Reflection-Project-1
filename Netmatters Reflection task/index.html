@@ -1,112 +1,144 @@
 <!DOCTYPE html>
 <html>
-    <!-- Head  -->
-    <head>
-        <title>Netmatters</title>
-        <meta name="viewport" charset="UTF-8">
-        <link rel="stylesheet" href="scss/application.css">
-        <link rel="stylesheet" href="scss/flexbox.css">
-    </head>
-<!-- body -->
-    <body>
-        
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+	<title>Netmatters</title>
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="scss/application.css">
+	<link rel="stylesheet" href="scss/flexbox.css">
+</head>
+<body>
+
             <header class="main-header">
-               <h1 class="main-heading"><a href="#">Netmatters&trade;</a></h1> 
-               <nav class="main-nav">
-                    <ul>
+                    <h1 class="name"><a href="#">Netmatters&trade;</a></h1>
+                    <ul class="main-nav nav">
                         <li><a href="#">Support</a></li>
                         <li><a href="#">Contact us</a></li>
                     </ul>
-                </nav>
-            </header>
+            </header><!--/.main-header-->   
         
-
-        <div>
-            <nav class="secondary-nav">
-                <ul>
-                    <li><a href="#">Bespoke Software</a></li> 
-                    <li><a href="#">IT Support</a></li>   
-                    <li><a href="#">Digital Marketing</a></li>
-                    <li><a href="#">Telecom Services</a></li>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Cyber Security</a></li>
-                    <li><a href="#">Developer Course</a></li>
-                </ul>
-            </nav>
+        <div class="secondary-nav nav">
+            <ul>
+            <li><a href="#">Bespoke Software</a></li> 
+            <li><a href="#">IT Support</a></li>   
+            <li><a href="#">Digital Marketing</a></li>
+            <li><a href="#">Telecom Services</a></li>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Cyber Security</a></li>
+            <li><a href="#">Developer Course</a></li>
+            </ul>
         </div>
 
+            <div class="banner">
+                <h1 class="headline">The East of England's Leading Technology Company</h1>
+                <span class="tagline">Performance-driven digital and technology services <br> with complete transparency.</span>
+            </div><!--/.banner-->
 
-        <div>
-            <img>
-        </div>
-        <div class="content-header">
-            <h1>Our Services</h1>
-        </div>
-        <div class="primary-content content">
+
+            <h1 class="subheading">Our Services</h1>
+                
+                <div class="row">		
+                    <div class="Item-1 col">
+                        <h2>Bespoke Software</h2>
+                        <p>Bespoke software solutions for all your business needs including integrations and reporting</p>
+                        <a class="button" href="#">Learn More</a>
+                    </div>
+                    
+                    <div class="Item-2 col">
+                        <h2>IT Support</h2>
+                        <p>Fully managed IT support and consultancy packages tailored to meet your exact business needs.</p>
+                        <a class="button" href="#">Learn More</a>
+                    </div>
+                        
+                    <div class="item-3 col">
+                        <h2>Digital Marketing</h2>
+                        <p>Driven brand awareness and ROI through creative digital marketing campaigns.</p>
+                        <a class="button" href="#">Learn More</a>
+                    </div>	
+                
+                        <div class="item-4 col">
+                        <h2>Telecom services</h2>
+                        <p>Business telephony solutions including mobile and connectivity solutions.</p>
+                        <a class="button" href="#">Learn More</a>
+                    </div>	
+                        <div class="item-5 col">
+                        <h2>Web Design</h2>
+                        <p>User-centric design for businesses looking to make a lasting impression.</p>
+                        <a class="button" href="#">Learn More</a>
+                    </div>
+                <div class="item-6 col">
+                        <h2>Cyber Security</h2>
+                        <p>Prevention, testing, consultancy and breach management services.</p>
+                        <a class="button" href="#">Learn More</a>
+                    </div>
+                <div class="item-7 col">
+                        <h2>Developer Course</h2>
+                        <p>Web design and software training courses designed to secure a job in tech.</p>
+                        <a class="button" href="#">Learn More</a>
+                    </div>
+            </div>
+                
+                <div class="secondary-content content">
+                    <div class="article-1 article">
+                        <h2>Welcome to Netmatters</h2>
+                        <p>Netmatters is a leading Bespoke Software, IT Support, and               Digital Marketing company based in the East of England with                           offices in Cambridge, Wymondham, and Great Yarmouth.
+                            <br>
+                        We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.
+                            <br>
+                        We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
+                        <a class="button" href="#">Read More</a>
+                    </div>
+                    <div class="article-2 article">
+                    <h2>What Our Clients Think</h2>
+                        <p>Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in the East of England with offices in Cambridge, Wymondham, and Great Yarmouth.
+                                <br>
+                        We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.
+                                <br>
+                        We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
+                        <p>Eleanor Bishop, Head of Marketing - Ashcroft Partnership LLP</p>
+                        <a class="button" href="#">Google Reviews</a>
+                        <a class="button" href="#">Trustpilot Reviews</a>
+                    </div>
+                </div>
+
+                <div class="signup">
+                    <h1 class="subheading">Email Newsletter Sign-Up</h1>
+                    <h3>Your Name:</h3>
+                    <input type="text" class="user_name">
+                    <h3>Your Email:</h3>
+                    <input type="text" class="user_email">
+                    <br>
+                    <p>	Please tick this box if you wish to receive marketing information from us. <br>Please see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe.</p>
+                    <input type="checkbox"> 
+                    <br>
+                    <br>
+                    <a class="signup-button" href="#">Subscribe</a>
+                </div>
             
-            <div class="item-1 item">
-                <h3>Bespoke Software</h3>
-                <p>Bespoke software solutions for all your business needs including integrations and reporting</p>
-                <a class="button" href="#">Read More</a>
-            </div>
-            <div class="item-2 item">
-                <h3>IT Support</h3>
-                <p>Fully managed IT support and consultancy packages tailored to meet your exact business needs.</p>
-                <a class="button" href="#">Read More</a>
-            </div>
-            <div class="item-3 item">
-                <h3>Digital Marketing</h3>
-                <p>Driven brand awareness & ROI through creative digital marketing campaigns.
-                </p>
-                <a class="button" href="#">Read More</a>
-            </div>
-            <div class="item-4 item">
-                <h3>Telecom Services</h3>
-                <p>Business telephony solutions including mobile & connectivity solutions.</p>
-                <a class="button" href="#">Read More</a>
-            </div>
-            <div class="item-5 item">
-                <h3>Web Design</h3>
-                <p>User-centric design for businesses looking to make a lasting impression.</p>
-                <a class="button" href="#">Read More</a>
-            </div>
-            <div class="item-6 item">
-                <h3>Cyber Security</h3>
-                <p> Prevention, testing, consultancy & breach management services.</p>
-                <a class="button" href="#">Read More</a>
-            </div>
-            <div class="item-7 item">
-                <h3>Developer Course</h3>
-                <p>Web design & software training courses designed to secure a job in tech.</p>
-                <a class="button" href="#">Read More</a>
-            </div>
-        </div>
-
-        <div class="secondary-content content">
-            <div class="article-1 article">
-                <h2>Welcome to Netmatters</h2>
-                <p>Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in the East of England with offices in Cambridge, Wymondham, and Great Yarmouth.
-                    <br>
-                    We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.
-                    <br>
-                    We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
-                    <a class="button" href="#">Read More</a>
-            </div>
-            <div class="article-2 article">
-                <h2>What Our Clients Think</h2>
-                <p>Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in the East of England with offices in Cambridge, Wymondham, and Great Yarmouth.
-                    <br>
-                    We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.
-                    <br>
-                    We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
-            </div>
-
-        </div>
-
-        <div>
+            
             <footer class="main-footer">
-                <span> &copy;Copyright Netmatters 2022. All rights reserved.</span>
+                <div class="services">
+                    <div class="service">
+                        <h4>About Netmatters</h4>
+                        <ul>
+                           <li><a href="#">News</a></li>
+                           <li><a href="#">Our Careers</a></li>
+                           <li><a href="#">Our Team</a></li>
+                           <li><a href="#">Privacy Policy</a></li>
+                           <li><a href="#">Cookie Policy</a></li>
+                           <li><a href="#">Terms and Conditions</a></li>
+                           <li><a href="#">Environmental Policy</a></li>
+                           <li><a href="#">Contact Us</a></li> 
+                        </ul>
+                    </div>
+                    <div class="service">
+
+                    </div>
+                    <br>
+                </div>
+                <span>&copy;Copyright Netmatters 2022. All rights reserved
+                    <span>
             </footer>
-        </div>
-    </body>
+    
+</body>
 </html>

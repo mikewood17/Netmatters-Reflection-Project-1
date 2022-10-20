@@ -1,12 +1,18 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: "Varela Round", sans-serif;
-  background-color: #e8e9e9;
   line-height: 1.6;
-  margin: 0;
+  color: #3a3a3a;
+}
+
+input {
+  margin-bottom: 10px;
 }
 
 ul {
@@ -15,98 +21,164 @@ ul {
   list-style: none;
 }
 
+p {
+  font-size: 0.95em;
+  margin: 0 0 1em 0;
+}
+
+h2,
+h3,
+a {
+  color: #093a58;
+}
+
+h2,
+h3 {
+  margin: 0 0 0.8em 0;
+}
+
+.subheading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 a {
   text-decoration: none;
 }
 
-p {
-  font-size: 0.95em;
-  margin-bottom: 1.8em;
+img {
+  max-width: 50%;
 }
 
-.content {
-  padding: 10px;
-  background-color: rgb(51, 55, 55);
-  border-radius: 5px;
-  margin: 45px auto;
-  box-shadow: 0 1.5px 0 0 rgba(0, 0, 0, 0.1);
-}
-.content a {
-  font-size: 0.8em;
-  color: white;
-}
-.content a:hover {
-  color: rgba(128, 128, 128, 0.6);
-}
-
-.secondary-nav {
-  margin-top: 1em;
-  background-color: rgb(81, 79, 79);
-  width: 100%;
-  padding: 10px;
-  box-shadow: 0 1.5px 0 0 rgba(0, 0, 0, 0.1);
-}
-.secondary-nav li {
-  display: inline-block;
-}
-.secondary-nav a {
-  color: white;
-  padding: 0.5em;
-  font-size: 0.85em;
-}
-.secondary-nav a:hover {
-  color: rgba(128, 128, 128, 0.7);
-}
-
-.item,
-.article {
-  color: white;
-  background-color: orange;
-  padding: 15px;
-  margin: 5px;
-  border-radius: 3px;
-}
-
-.main-heading {
-  font-size: 3em;
+/* ================================= 
+  Base Layout Styles
+==================================== */
+/* ---- Navigation ---- */
+.name {
+  font-size: 1.35em;
   margin: 0;
-  letter-spacing: 1px;
 }
 
 .main-nav {
   margin-top: 5px;
+  background-color: #3acec2;
+}
+.main-nav a {
+  color: #fff;
 }
 
-.main-heading,
-.main-nav a {
-  color: black;
+.secondary-nav {
+  margin-top: 5px;
+  display: block;
+}
+.secondary-nav a {
+  color: #3acec2;
+}
+
+.name a,
+.nav a {
   text-align: center;
   display: block;
   padding: 10px 15px;
 }
 
-.main-nav a {
+.nav a {
   font-size: 0.95em;
-  text-decoration: none;
+  text-transform: uppercase;
 }
 
-.main-header a:hover {
-  color: orange;
+.nav a:hover {
+  color: #093a58;
+}
+
+.signup {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ---- Layout Containers ---- */
+.main-header {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.banner,
+.main-footer {
+  text-align: center;
+}
+
+.banner {
+  color: #fff;
+  background: #3acec2;
+  padding: 3.2em 0;
+  margin-bottom: 48px;
+}
+
+.col {
+  padding: 1em;
+  background: #edf4f7;
+  border-radius: 0.35em;
+  margin: 0 0.5em 0.8em;
+}
+
+.secondary-content {
+  text-align: justify;
+}
+
+.signup {
+  color: #fff;
+  background: #3acec2;
+  padding: 20px 50px;
 }
 
 .main-footer {
-  text-align: center;
   background: #d9e4ea;
   padding: 2em 0;
   margin-top: 30px;
 }
 
+.item,
+.article {
+  padding: 15px;
+  margin: 5px;
+  border-radius: 3px;
+}
+
 /* ---- Page Elements ---- */
+.logo {
+  width: 190px;
+}
+
+.headline {
+  margin-bottom: 0;
+}
+
+.feat-img {
+  border-radius: 5px;
+}
+
+.user_name,
+.user_email {
+  height: 50px;
+  width: 300px;
+  font-size: 1em;
+  box-shadow: #3a3a3a;
+}
+
+.signup-button {
+  color: #3acec2;
+  text-align: center;
+  padding: 0.625em 1.25em;
+  background: #fff;
+  border-radius: 0.35em;
+}
+
 .button {
   color: #fff;
   text-align: center;
   padding: 0.625em 1.25em;
-  background: #2c2e2e;
+  background: #3acec2;
   border-radius: 0.35em;
 }
 
@@ -115,14 +187,17 @@ p {
 ==================================== */
 @media (min-width: 769px) {
   .main-header,
-.content {
+.row {
     width: 90%;
     margin: 0 auto;
+  }
+  .tagline {
+    font-size: 1.4em;
   }
 }
 @media (min-width: 1025px) {
   .main-header,
-.content {
+.row {
     width: 80%;
     max-width: 1150px;
   }
