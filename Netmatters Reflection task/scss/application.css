@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+  background-color: #e8e9e9;
+  line-height: 1.6;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 0.95em;
+  margin-bottom: 1.8em;
+}
+
+.content {
+  padding: 10px;
+  background-color: rgb(51, 55, 55);
+  border-radius: 5px;
+  margin: 45px auto;
+  box-shadow: 0 1.5px 0 0 rgba(0, 0, 0, 0.1);
+}
+.content a {
+  font-size: 0.8em;
+  color: white;
+}
+.content a:hover {
+  color: rgba(128, 128, 128, 0.6);
+}
+
+.secondary-nav {
+  margin-top: 1em;
+  background-color: rgb(81, 79, 79);
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 1.5px 0 0 rgba(0, 0, 0, 0.1);
+}
+.secondary-nav li {
+  display: inline-block;
+}
+.secondary-nav a {
+  color: white;
+  padding: 0.5em;
+  font-size: 0.85em;
+}
+.secondary-nav a:hover {
+  color: rgba(128, 128, 128, 0.7);
+}
+
+.item,
+.article {
+  color: white;
+  background-color: orange;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+.main-heading {
+  font-size: 3em;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.main-nav {
+  margin-top: 5px;
+}
+
+.main-heading,
+.main-nav a {
+  color: black;
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+
+.main-nav a {
+  font-size: 0.95em;
+  text-decoration: none;
+}
+
+.main-header a:hover {
+  color: orange;
+}
+
+.main-footer {
+  text-align: center;
+  background: #d9e4ea;
+  padding: 2em 0;
+  margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */
+.button {
+  color: #fff;
+  text-align: center;
+  padding: 0.625em 1.25em;
+  background: #2c2e2e;
+  border-radius: 0.35em;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+@media (min-width: 769px) {
+  .main-header,
+.content {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1025px) {
+  .main-header,
+.content {
+    width: 80%;
+    max-width: 1150px;
+  }
+}/*# sourceMappingURL=application.css.map */

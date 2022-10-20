@@ -1,0 +1,55 @@
+/* Flexbox */
+
+
+@media (min-width: 769px) {
+    .main-header,
+    .main-nav,
+    .primary-content
+    .secondary-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-header {
+        flex-direction:column;
+        align-items:center;
+    }
+}
+
+@media (min-width: 1025px) {
+    .main-header {
+        flex-direction: row;
+        justify-content:space-between;
+    }   
+    .secondary-content {
+        flex-direction: column;
+        flex-basis: 1;
+    }
+
+}
+
+
+.secondary-nav {
+    display:flex;
+    justify-content: center;
+}
+
+.primary-content {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    align-items: stretch;
+    justify-content: center;
+    
+ }
+ .button {
+    margin-top: auto;
+ }
+
+ .item {
+    flex: 1 200px;
+ }
+
+
+ .article {
+    flex: 1 200px;
+ }
