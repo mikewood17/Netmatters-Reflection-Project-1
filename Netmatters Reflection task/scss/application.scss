@@ -9,6 +9,7 @@ body {
 	font-family: 'Varela Round', sans-serif;
 	line-height: 1.6;
 	color: #3a3a3a;
+    margin: 0;
     
 }
 input {
@@ -40,9 +41,6 @@ h3 {
 a {
 	text-decoration: none;
 }
-img {
-	max-width: 50%;
-}
 
 
 /* ================================= 
@@ -50,25 +48,51 @@ img {
 ==================================== */
 
 /* ---- Navigation ---- */
+.main-header{
+    width: 100%;
+}
 
+.upper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
 .name {
+    display: flex;
 	font-size: 1em;
-	margin: 0;
+	margin: auto;
     width: 100%;
     max-width: 392px;
 }
-.main-nav {
-	margin-top: 5px;
-    background-color: #3acec2;
-    a {
-        color: #fff;
-    }
+.conatiner-button{
+    display: flex;
+    flex-direction: row;
 }
+.nav-btn {
+    display:inline;
+    width: 141px;
+    height: 56px;
+    border: 4px;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 15px;
+}
+// .main-nav {
+//     display: inline-block;
+//     a {
+//         color: #000;
+//     }
+// }
 .secondary-nav {
     margin-top: 5px;
-    display: block;
+    display: flex;
+    width: 100%;
+    background-color: #3a3a3a;
     a {
-        color: #3acec2;
+        color: #fff;
     }
   }
 
@@ -76,7 +100,7 @@ img {
 .nav a {
 	text-align: center;
 	display: block;
-	padding: 10px 15px;
+	padding: 10px;
 }
 .nav a {
 	font-size: .95em;
@@ -117,6 +141,7 @@ img {
 .main-header {
 	padding-top: .5em;
 	padding-bottom: .5em;
+    width: 100%;
 }
 .banner,
 .main-footer {
@@ -159,7 +184,7 @@ img {
     border-radius: 3px;
  }
 
-Page Elements ---- */
+// Page Elements ---- */
 
 .name {
     font-size: 3em;
@@ -205,7 +230,7 @@ Page Elements ---- */
 	.main-header,
 	.row {
 		width: 90%;
-		margin: 0 auto;
+		// margin: 0 auto;
 	}
 	.tagline {
 		font-size: 1.4em;

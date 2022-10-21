@@ -9,6 +9,7 @@ body {
   font-family: "Varela Round", sans-serif;
   line-height: 1.6;
   color: #3a3a3a;
+  margin: 0;
 }
 
 input {
@@ -46,40 +47,61 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 50%;
-}
-
 /* ================================= 
   Base Layout Styles
 ==================================== */
 /* ---- Navigation ---- */
-.name {
-  font-size: 1.35em;
-  margin: 0;
+.main-header {
+  width: 100%;
 }
 
-.main-nav {
-  margin-top: 5px;
-  background-color: #3acec2;
+.upper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
-.main-nav a {
-  color: #fff;
+
+.name {
+  display: flex;
+  font-size: 1em;
+  margin: auto;
+  width: 100%;
+  max-width: 392px;
+}
+
+.conatiner-button {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-btn {
+  display: inline;
+  width: 141px;
+  height: 56px;
+  border: 4px;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 15px;
 }
 
 .secondary-nav {
   margin-top: 5px;
-  display: block;
+  display: flex;
+  width: 100%;
+  background-color: #3a3a3a;
 }
 .secondary-nav a {
-  color: #3acec2;
+  color: #fff;
 }
 
 .name a,
 .nav a {
   text-align: center;
   display: block;
-  padding: 10px 15px;
+  padding: 10px;
 }
 
 .nav a {
@@ -105,9 +127,22 @@ img {
 }
 
 /* ---- Layout Containers ---- */
+.fa-code:before {
+  content: "\f121";
+}
+
+.fa-grid:before {
+  content: "\e195";
+}
+
+.fa-desktop {
+  content: "\f390";
+}
+
 .main-header {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+  width: 100%;
 }
 
 .banner,
@@ -153,13 +188,6 @@ img {
   border-radius: 3px;
 }
 
-.user_email,
-.user_name {
-  height: 47px;
-  width: 507px;
-}
-
-/* ---- Page Elements ---- */
 .name {
   font-size: 3em;
 }
@@ -207,7 +235,6 @@ img {
   .main-header,
 .row {
     width: 90%;
-    margin: 0 auto;
   }
   .tagline {
     font-size: 1.4em;
