@@ -97,6 +97,13 @@ img {
   text-align: center;
 }
 
+.checkbox {
+  cursor: pointer;
+}
+.checkbox:hover {
+  background-color: #3a3a3a;
+}
+
 /* ---- Layout Containers ---- */
 .main-header {
   padding-top: 0.5em;
@@ -110,7 +117,8 @@ img {
 
 .banner {
   color: #fff;
-  background: #3acec2;
+  background: url("../img/background_img.jpg") center/cover no-repeat #3acec2;
+  background-blend-mode: multiply;
   padding: 3.2em 0;
   margin-bottom: 48px;
 }
@@ -145,7 +153,17 @@ img {
   border-radius: 3px;
 }
 
+.user_email,
+.user_name {
+  height: 47px;
+  width: 507px;
+}
+
 /* ---- Page Elements ---- */
+.name {
+  font-size: 3em;
+}
+
 .logo {
   width: 190px;
 }

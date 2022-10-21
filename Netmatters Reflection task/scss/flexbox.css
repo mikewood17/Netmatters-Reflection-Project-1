@@ -3,8 +3,6 @@
 ==================================== */
 
 
-
-
 /* ================================= 
   Media Queries
 ==================================== */
@@ -39,6 +37,16 @@
 
 }
 
+@media (max-width: 1024px) {
+    .row{
+        flex-wrap: wrap;
+    }
+    .main-header{
+        justify-content: center;
+    }
+}
+
+
 @media (min-width: 1025px) {
 
 	.main-header {
@@ -61,5 +69,20 @@
     .button {
         margin-top: auto;
     }
+    .subheading-2 {
+        text-align: left;
+    }
+    .sign-up-container{
+        display: flex;
+        justify-content:space-around;
+    }
+
+    .service {
+        display:  inline-flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 
 }
+
+

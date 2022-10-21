@@ -41,9 +41,9 @@ a {
 	text-decoration: none;
 }
 img {
-    
 	max-width: 50%;
 }
+
 
 /* ================================= 
   Base Layout Styles
@@ -89,6 +89,14 @@ img {
     margin-bottom: 20px;
     text-align: center;
 }
+
+.checkbox {
+    cursor: pointer;
+    &:hover {
+        background-color: #3a3a3a;
+    }
+}
+
 /* ---- Layout Containers ---- */
 
 
@@ -102,7 +110,8 @@ img {
 }
 .banner {
 	color: #fff;
-	background: #3acec2;
+	background: url("../img/background_img.jpg") center / cover no-repeat #3acec2;
+    background-blend-mode: multiply;
 	padding: 3.2em 0;
 	margin-bottom: 48px;
 }
@@ -135,8 +144,12 @@ img {
     margin: 5px;
     border-radius: 3px;
  }
-/* ---- Page Elements ---- */
 
+Page Elements ---- */
+
+.name {
+    font-size: 3em;
+}
 .logo {
 	width: 190px;
 }
