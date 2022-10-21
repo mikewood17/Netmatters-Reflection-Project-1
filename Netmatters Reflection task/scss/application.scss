@@ -52,8 +52,10 @@ img {
 /* ---- Navigation ---- */
 
 .name {
-	font-size: 1.35em;
+	font-size: 1em;
 	margin: 0;
+    width: 100%;
+    max-width: 392px;
 }
 .main-nav {
 	margin-top: 5px;
@@ -98,6 +100,18 @@ img {
 }
 
 /* ---- Layout Containers ---- */
+
+.fa-code:before {
+    
+    content: "\f121";
+  }
+
+.fa-grid:before {
+    content: "\e195";
+  }
+.fa-desktop {
+    content: "\f390";
+}
 
 
 .main-header {

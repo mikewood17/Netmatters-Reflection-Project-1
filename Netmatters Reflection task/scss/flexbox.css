@@ -9,7 +9,7 @@
 
 @media (min-width: 769px) {
 
-	.main-header,
+	.upper,
 	.nav,
 	.row, 
     .col
@@ -32,7 +32,7 @@
   }
   
     .secondary-nav {
-         justify-content:center;
+       display: none;
 }
 
 }
@@ -54,7 +54,10 @@
 		justify-content: space-between;
 	    }
     .secondary-nav {
-        display:none;
+        display:flex;
+        flex-wrap: wrap;
+        position: relative;
+        flex-direction: row;
     }
     .row {
         flex-direction:row;
