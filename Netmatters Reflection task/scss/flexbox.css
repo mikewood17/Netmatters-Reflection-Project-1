@@ -2,13 +2,23 @@
   Base Styles
 ==================================== */
 
-.container-button {
-    display: flex;
-}
+
 /* ================================= 
   Media Queries
 ==================================== */
+@media (min-width:0px){
+    .secondary-nav {
+        display: none;
+    }
 
+    .signup {
+        text-align: center;
+    }
+
+    .container_button {
+        display: none;
+    }
+}
 @media (min-width: 769px) {
 
 	.upper,
@@ -25,26 +35,47 @@
 	}
 
     .col {
+        align-items: center;
 		flex: 1 200px;
         flex-direction:column;
 	}
     .button {
         margin-top: auto;
         align-self:flex-end;
-  }
+     }
   
     .secondary-nav {
        display: none;
-}
+    }
+    .signup{
+    text-align: center;
+    }
+    .container_button {
+        display: none;
+    }
 
 }
 
-@media (max-width: 1024px) {
+
+@media (min-width: 770px) and (max-width: 1024px) {
     .row{
         flex-wrap: wrap;
     }
     .main-header{
         justify-content: center;
+    }
+
+    .secondary-nav {
+        display: flex;
+    }
+
+    .container_button {
+        display: flex;
+    }
+
+    .office,
+    .service {
+        display: flex;
     }
 }
 
@@ -81,11 +112,22 @@
         display: flex;
         justify-content:space-around;
     }
+    .sign-up-button-container{
+        text-align: center;
+    }
 
     .service {
         display:  inline-flex;
         flex-wrap: wrap;
         flex-direction: column;
+    }
+    .offices {
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .container_button {
+        display: flex;
     }
 
 }

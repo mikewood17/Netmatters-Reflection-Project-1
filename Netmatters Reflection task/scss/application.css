@@ -6,7 +6,8 @@
 }
 
 body {
-  font-family: "Varela Round", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 1rem;
   line-height: 1.6;
   color: #3a3a3a;
   margin: 0;
@@ -87,13 +88,36 @@ a {
   margin-left: 15px;
 }
 
+.button-1 {
+  background-color: #4183d7;
+  border-color: #4183d7;
+  border-radius: 5%;
+}
+.button-1 a {
+  color: #fff;
+}
+
+.button-2 {
+  background-color: #999aa2;
+  border-color: #999aa2;
+  border-radius: 5%;
+}
+.button-2 a {
+  color: #fff;
+}
+
 .secondary-nav {
-  margin-top: 5px;
   display: flex;
+  justify-content: center;
+  font-size: 0.8em;
   width: 100%;
-  background-color: #3a3a3a;
+  background-color: #333645;
 }
 .secondary-nav a {
+  color: #fff;
+}
+
+.top-nav:hover {
   color: #fff;
 }
 
@@ -101,11 +125,11 @@ a {
 .nav a {
   text-align: center;
   display: block;
-  padding: 10px;
+  padding: 10px 15px;
 }
 
 .nav a {
-  font-size: 0.95em;
+  font-size: 1.125em;
   text-transform: uppercase;
 }
 
@@ -115,8 +139,6 @@ a {
 
 .signup {
   margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
 }
 
 .checkbox {
@@ -126,36 +148,134 @@ a {
   background-color: #3a3a3a;
 }
 
-/* ---- Layout Containers ---- */
-.fa-code:before {
-  content: "\f121";
+/* ---- hover styling ---- */
+.item-1:hover {
+  background-color: #67809f;
+  color: #fff;
+}
+.item-1:hover h2 {
+  color: #fff;
+}
+.item-1:hover a {
+  color: #67809f;
+  background-color: #fff;
 }
 
-.fa-grid:before {
+.item-2:hover {
+  background-color: #4183d7;
+  color: #fff;
+}
+.item-2:hover h2 {
+  color: #fff;
+}
+.item-2:hover a {
+  color: #4183d7;
+  background-color: #fff;
+}
+
+.item-3:hover {
+  background-color: #2ecc71;
+  color: #fff;
+}
+.item-3:hover h2 {
+  color: #fff;
+}
+.item-3:hover a {
+  color: #2ecc71;
+  background-color: #fff;
+}
+
+.item-4:hover {
+  background-color: #d64541;
+  color: #fff;
+}
+.item-4:hover h2 {
+  color: #fff;
+}
+.item-4:hover a {
+  color: #d64541;
+  background-color: #fff;
+}
+
+.item-5:hover {
+  background-color: #926fb1;
+  color: #fff;
+}
+.item-5:hover h2 {
+  color: #fff;
+}
+.item-5:hover a {
+  color: #926fb1;
+  background-color: #fff;
+}
+
+.item-6:hover {
+  background-color: #f62459;
+  color: #fff;
+}
+.item-6:hover h2 {
+  color: #fff;
+}
+.item-6:hover a {
+  color: #f62459;
+  background-color: #fff;
+}
+
+.item-7:hover {
+  background-color: #ce4125;
+  color: #fff;
+}
+.item-7:hover h2 {
+  color: #fff;
+}
+.item-7:hover a {
+  color: #ce4125;
+  background-color: #fff;
+}
+
+/* ---- Icons styling ---- */
+.fa-code::before {
+  content: "\f121";
+  background-color: #926fb1;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+}
+
+.fa-grid::before {
   content: "\e195";
 }
 
-.fa-desktop {
+.fa-desktop::before {
   content: "\f390";
 }
 
+/* ---- Layout Containers ---- */
 .main-header {
   padding-top: 0.5em;
-  padding-bottom: 0.5em;
   width: 100%;
 }
 
-.banner,
 .main-footer {
   text-align: center;
 }
 
 .banner {
-  color: #fff;
-  background: url("../img/background_img.jpg") center/cover no-repeat #3acec2;
-  background-blend-mode: multiply;
+  background: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-oaVs.webp") center/cover no-repeat;
   padding: 3.2em 0;
   margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.banner-content {
+  color: #fff;
+  margin: 5em 10em;
+}
+.banner-content a {
+  color: #fff;
 }
 
 .col {
@@ -170,15 +290,18 @@ a {
 }
 
 .signup {
-  color: #fff;
-  background: #3acec2;
-  padding: 20px 50px;
+  color: #666;
+  background: #ddd;
+  padding: 50px 50px;
 }
 
 .main-footer {
-  background: #d9e4ea;
-  padding: 2em 0;
-  margin-top: 30px;
+  background-color: #333645;
+  color: #fff;
+  padding: 47px 0 43px;
+}
+.main-footer a {
+  color: #fff;
 }
 
 .item,
@@ -189,19 +312,7 @@ a {
 }
 
 .name {
-  font-size: 3em;
-}
-
-.logo {
-  width: 190px;
-}
-
-.headline {
-  margin-bottom: 0;
-}
-
-.feat-img {
-  border-radius: 5px;
+  font-size: 2em;
 }
 
 .user_name,
@@ -213,10 +324,18 @@ a {
 }
 
 .signup-button {
-  color: #3acec2;
+  color: #fff;
   text-align: center;
   padding: 0.625em 1.25em;
-  background: #fff;
+  background: #333645;
+  border-radius: 0.35em;
+}
+
+.banner-button {
+  width: 10em;
+  text-align: center;
+  padding: 0.625em 1.25em;
+  background: #67809f;
   border-radius: 0.35em;
 }
 
@@ -228,22 +347,32 @@ a {
   border-radius: 0.35em;
 }
 
+.service,
+.office {
+  padding: 15px;
+  justify-content: space-evenly;
+}
+
+.office {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
 @media (min-width: 769px) {
-  .main-header,
-.row {
+  .row {
     width: 90%;
+    margin: 0 auto;
   }
   .tagline {
     font-size: 1.4em;
   }
 }
 @media (min-width: 1025px) {
-  .main-header,
-.row {
+  .row {
     width: 80%;
-    max-width: 1150px;
+    text-align: center;
   }
 }/*# sourceMappingURL=application.css.map */
