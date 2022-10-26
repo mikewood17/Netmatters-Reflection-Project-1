@@ -41,8 +41,7 @@
 	}
     .button {
         margin-top: auto;
-        align-self:flex-end;
-     }
+    }
   
     .secondary-nav {
        display: none;
