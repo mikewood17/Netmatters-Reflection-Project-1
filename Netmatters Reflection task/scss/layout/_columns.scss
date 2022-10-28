@@ -1,0 +1,107 @@
+/* ---- Article Styling ---- */
+
+
+.banner {
+	background: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-oaVs.webp") center / cover no-repeat;
+	padding: 3.2em 0;
+	margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.banner-content {
+    color: #fff;
+    margin: 5em 10em;
+    a {
+        color: #fff;
+    }
+}
+
+.col {
+	padding: 1em;
+	background: #edf4f7;
+	border-radius: .35em;
+	margin: 0 .5em .8em;
+    border: 1px solid #999aa2;
+    justify-content: center;
+}
+.news{
+    width: 30%;
+	background: #edf4f7;
+	margin: 0 .5em .8em;
+    border: 1px solid #999aa2;
+}
+.news-1{
+    flex:1;
+}
+.news-2 {
+    flex:1;
+}
+.news-3 {
+    flex:1;
+}
+.block{
+    padding: 1em;
+    .button{
+        background-color: #3a3a3a;
+        margin-bottom: 20px;
+    }
+    .img{
+        margin-top: 20px;
+    }
+}
+.user{
+    display: table;
+    width: 100%;
+    font-size: .875rem;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.secondary-content {
+    color: #fff;
+    background-color: #333645;
+    text-align:justify;
+    padding-bottom: 50px;
+}
+
+.signup {
+    color: #666;
+	background: #ddd;
+    padding: 50px 50px;
+    margin-top: 20px;
+}
+
+
+
+.item,
+ .article {
+    padding: 15px;
+    margin: 5px;
+    border-radius: 3px;
+ }
+
+ .item-1,
+ .item-2,
+ .item-3 {
+    flex: 1 333px;
+ }
+
+ .item-4,
+ .item-5,
+ .item-6,
+ .item-7 {
+    flex: 1 250px;
+ }
+
+ .user_name,
+.user_email {
+    height: 50px;
+    width: 300px;
+    font-size: 1em;
+    box-shadow: #3a3a3a;
+}
+.bar{
+    padding-top: 50px;
+}

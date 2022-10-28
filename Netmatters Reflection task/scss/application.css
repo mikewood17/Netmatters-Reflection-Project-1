@@ -1,3 +1,4 @@
+/* ----- Base Imports ----- */
 /* ================================= 
   Base Element Styles
 ==================================== */
@@ -7,10 +8,16 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
   font-weight: 1rem;
   line-height: 1.6;
   color: #3a3a3a;
   margin: 0;
+}
+
+div {
+  display: block;
 }
 
 input {
@@ -40,19 +47,172 @@ h3 {
 }
 
 .subheading {
-  text-align: center;
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 a {
   text-decoration: none;
 }
 
-/* ================================= 
-  Base Layout Styles
-==================================== */
-/* ---- Navigation ---- */
+/* ----- Layout Imports ----- */
+/* ---- Article Styling ---- */
+.banner {
+  background: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-oaVs.webp") center/cover no-repeat;
+  padding: 3.2em 0;
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.banner-content {
+  color: #fff;
+  margin: 5em 10em;
+}
+.banner-content a {
+  color: #fff;
+}
+
+.col {
+  padding: 1em;
+  background: #edf4f7;
+  border-radius: 0.35em;
+  margin: 0 0.5em 0.8em;
+  border: 1px solid #999aa2;
+  justify-content: center;
+}
+
+.news {
+  width: 30%;
+  background: #edf4f7;
+  margin: 0 0.5em 0.8em;
+  border: 1px solid #999aa2;
+}
+
+.news-1 {
+  flex: 1;
+}
+
+.news-2 {
+  flex: 1;
+}
+
+.news-3 {
+  flex: 1;
+}
+
+.block {
+  padding: 1em;
+}
+.block .button {
+  background-color: #3a3a3a;
+  margin-bottom: 20px;
+}
+.block .img {
+  margin-top: 20px;
+}
+
+.user {
+  display: table;
+  width: 100%;
+  font-size: 0.875rem;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+.secondary-content {
+  color: #fff;
+  background-color: #333645;
+  text-align: justify;
+  padding-bottom: 50px;
+}
+
+.signup {
+  color: #666;
+  background: #ddd;
+  padding: 50px 50px;
+  margin-top: 20px;
+}
+
+.item,
+.article {
+  padding: 15px;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+.item-1,
+.item-2,
+.item-3 {
+  flex: 1 333px;
+}
+
+.item-4,
+.item-5,
+.item-6,
+.item-7 {
+  flex: 1 250px;
+}
+
+.user_name,
+.user_email {
+  height: 50px;
+  width: 300px;
+  font-size: 1em;
+  box-shadow: #3a3a3a;
+}
+
+.bar {
+  padding-top: 50px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.our-services-container {
+  margin-bottom: 50px;
+}
+
+.row {
+  margin-bottom: 50px;
+}
+
+.search-form {
+  margin-top: 11px;
+  position: relative;
+}
+
+.main-footer {
+  text-align: center;
+  background-color: #333645;
+  color: #fff;
+  padding: 47px 0 43px;
+}
+.main-footer a {
+  color: #fff;
+}
+
+.service,
+.office {
+  padding: 15px;
+  justify-content: space-evenly;
+}
+
+.office {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+/*# sourceMappingURL=header.css.map */
 .main-header {
+  width: 100%;
+  padding-top: 0.5em;
   width: 100%;
 }
 
@@ -66,16 +226,85 @@ a {
 }
 
 .name {
-  display: flex;
-  font-size: 1em;
+  float: left;
+  font-size: 2em;
   margin: auto;
   width: 100%;
   max-width: 392px;
 }
 
-.conatiner-button {
+.main-nav {
   display: flex;
   flex-direction: row;
+  float: left;
+}
+
+.important-nav {
+  display: flex;
+}
+
+.secondary-nav {
+  display: flex;
+  justify-content: center;
+  font-size: 1.125rem;
+  width: 100%;
+  background-color: #333645;
+}
+.secondary-nav a {
+  color: #fff;
+}
+.secondary-nav:hover {
+  color: #fff;
+}
+
+.name a,
+.nav a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+
+.nav a {
+  text-transform: uppercase;
+}
+
+.nav a:hover {
+  color: #093a58;
+}
+
+/* ----- Component Imports ----- */
+.signup-button {
+  color: #fff;
+  text-align: center;
+  padding: 0.625em 1.25em;
+  background: #333645;
+  border-radius: 0.35em;
+}
+
+.banner-button {
+  height: 50px;
+  width: 10em;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px 20px;
+  background: #67809f;
+  border-radius: 0.35em;
+  justify-content: center;
+}
+
+.button {
+  color: #fff;
+  text-align: center;
+  padding: 0.625em 1.25em;
+  border-radius: 0.35em;
+}
+
+.btn-lg {
+  height: auto;
+  padding: 5px 20px;
+  font-size: 1.25rem;
+  line-height: 50px;
+  border-radius: 0.35em;
 }
 
 .nav-btn {
@@ -85,12 +314,13 @@ a {
   border: 4px;
   font-size: 18px;
   text-align: center;
-  margin-left: 15px;
+  margin: 0 15px 0 15px;
 }
 
 .search-bar {
   border-radius: 5% 0 5% 0;
   height: 56px;
+  width: 240px;
   margin-left: 10px;
   border: 1px solid #e5e5e5;
 }
@@ -102,6 +332,28 @@ a {
   border-radius: 0 5% 0 5%;
   height: 56px;
   width: 56px;
+  font-size: 25px;
+}
+
+.search-bar-mobile {
+  background-color: rgba(0, 0, 0, 0.1);
+  outline: 1px solid hsla(0deg, 0%, 100%, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  transition: none;
+  width: 100%;
+  padding-right: 40px;
+  height: 50px;
+}
+
+.search-submit {
+  background: none;
+  border: none;
+  color: #333645;
+  position: absolute;
+  right: 5px;
+  line-height: 47px;
+  font-size: 20px;
+  outline: none;
 }
 
 .hamburger {
@@ -130,39 +382,9 @@ a {
   color: #fff;
 }
 
-.secondary-nav {
+.button-1 a, .button-2 a {
   display: flex;
-  justify-content: center;
-  font-size: 0.8em;
-  width: 100%;
-  background-color: #333645;
-}
-.secondary-nav a {
-  color: #fff;
-}
-
-.top-nav:hover {
-  color: #fff;
-}
-
-.name a,
-.nav a {
-  text-align: center;
-  display: block;
-  padding: 10px 15px;
-}
-
-.nav a {
-  font-size: 1.125em;
-  text-transform: uppercase;
-}
-
-.nav a:hover {
-  color: #093a58;
-}
-
-.signup {
-  margin-top: 20px;
+  gap: 10px;
 }
 
 .checkbox {
@@ -172,12 +394,35 @@ a {
   background-color: #3a3a3a;
 }
 
-/* ---- Our Services styling ---- */
+.read-more {
+  background-color: rgb(39, 41, 54);
+}
+
+.review-btn {
+  border-radius: 6px;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+
+.g-reviews {
+  background-color: rgb(67, 135, 246);
+  margin-right: 8px;
+}
+
+.t-reviews {
+  background-color: rgb(0, 182, 123);
+}
+
+.fa-star {
+  font-size: 50px;
+  color: orange;
+  margin-bottom: 25px;
+}
+
 .icon {
   line-height: unset;
   display: flex;
   justify-content: center;
-  padding-top: 10px;
   font-size: 30px;
   width: 65px;
   height: 65px;
@@ -186,56 +431,52 @@ a {
   color: #fff;
 }
 
-.item-1 i {
-  background-color: #67809f;
+/* ---- hover styling ---- */
+.col:hover .icon {
+  background-color: #fff;
 }
+
+.headings-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.topic-header {
+  font-size: 40px;
+}
+
+.view-all {
+  font-size: 25px;
+}
+
+.article-heading {
+  color: #fff;
+  font-size: 2.5em;
+}
+
+.article-content {
+  font-size: 1.5em;
+}
+
+.client-quote {
+  font-size: 1.8em;
+  font-style: italic;
+}
+
+.quote-author {
+  font-size: 1.5em;
+  color: #a3a8ac;
+}
+
+.news-img {
+  max-width: 100%;
+}
+
 .item-1 a {
   background-color: #67809f;
 }
-
-.item-2 i {
-  background-color: #4183d7;
-}
-.item-2 a {
-  background-color: #4183d7;
-}
-
-.item-3 i {
-  background-color: #2ecc71;
-}
-.item-3 a {
-  background-color: #2ecc71;
-}
-
-.item-4 i {
-  background-color: #d64541;
-}
-.item-4 a {
-  background-color: #d64541;
-}
-
-.item-5 i {
-  background-color: #926fb1;
-}
-.item-5 a {
-  background-color: #926fb1;
-}
-
-.item-6 i {
-  background-color: #f62459;
-}
-.item-6 a {
-  background-color: #f62459;
-}
-
-.item-7 i {
-  background-color: #ce4125;
-}
-.item-7 a {
-  background-color: #ce4125;
-}
-
-/* ---- hover styling ---- */
 .item-1:hover {
   background-color: #67809f;
   color: #fff;
@@ -252,6 +493,17 @@ a {
   background-color: #fff;
 }
 
+.icon-1 {
+  background-color: #67809f;
+}
+
+.nav-icon-1 {
+  color: #67809f;
+}
+
+.item-2 a {
+  background-color: #4183d7;
+}
 .item-2:hover {
   background-color: #4183d7;
   color: #fff;
@@ -268,6 +520,17 @@ a {
   background-color: #fff;
 }
 
+.icon-2 {
+  background-color: #4183d7;
+}
+
+.nav-icon-2 {
+  color: #4183d7;
+}
+
+.item-3 a {
+  background-color: #2ecc71;
+}
 .item-3:hover {
   background-color: #2ecc71;
   color: #fff;
@@ -284,6 +547,17 @@ a {
   background-color: #fff;
 }
 
+.icon-3 {
+  background-color: #2ecc71;
+}
+
+.nav-icon-3 {
+  color: #2ecc71;
+}
+
+.item-4 a {
+  background-color: #d64541;
+}
 .item-4:hover {
   background-color: #d64541;
   color: #fff;
@@ -300,6 +574,17 @@ a {
   background-color: #fff;
 }
 
+.icon-4 {
+  background-color: #d64541;
+}
+
+.nav-icon-4 {
+  color: #d64541;
+}
+
+.item-5 a {
+  background-color: #926fb1;
+}
 .item-5:hover {
   background-color: #926fb1;
   color: #fff;
@@ -316,6 +601,17 @@ a {
   background-color: #fff;
 }
 
+.icon-5 {
+  background-color: #926fb1;
+}
+
+.nav-icon-5 {
+  color: #926fb1;
+}
+
+.item-6 a {
+  background-color: #f62459;
+}
 .item-6:hover {
   background-color: #f62459;
   color: #fff;
@@ -332,6 +628,17 @@ a {
   background-color: #fff;
 }
 
+.icon-6 {
+  background-color: #f62459;
+}
+
+.nav-icon-6 {
+  color: #f62459;
+}
+
+.item-7 a {
+  background-color: #ce4125;
+}
 .item-7:hover {
   background-color: #ce4125;
   color: #fff;
@@ -348,129 +655,10 @@ a {
   background-color: #fff;
 }
 
-/* ---- Layout Containers ---- */
-.main-header {
-  padding-top: 0.5em;
-  width: 100%;
+.icon-7 {
+  background-color: #ce4125;
 }
 
-.main-footer {
-  text-align: center;
-}
-
-.banner {
-  background: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-oaVs.webp") center/cover no-repeat;
-  padding: 3.2em 0;
-  margin-bottom: 48px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-}
-
-.banner-content {
-  color: #fff;
-  margin: 5em 10em;
-}
-.banner-content a {
-  color: #fff;
-}
-
-.col {
-  padding: 1em;
-  background: #edf4f7;
-  border-radius: 0.35em;
-  margin: 0 0.5em 0.8em;
-  border: 1px solid #999aa2;
-}
-
-.secondary-content {
-  text-align: justify;
-}
-
-.signup {
-  color: #666;
-  background: #ddd;
-  padding: 50px 50px;
-}
-
-.main-footer {
-  background-color: #333645;
-  color: #fff;
-  padding: 47px 0 43px;
-}
-.main-footer a {
-  color: #fff;
-}
-
-.item,
-.article {
-  padding: 15px;
-  margin: 5px;
-  border-radius: 3px;
-}
-
-.name {
-  font-size: 2em;
-}
-
-.user_name,
-.user_email {
-  height: 50px;
-  width: 300px;
-  font-size: 1em;
-  box-shadow: #3a3a3a;
-}
-
-.signup-button {
-  color: #fff;
-  text-align: center;
-  padding: 0.625em 1.25em;
-  background: #333645;
-  border-radius: 0.35em;
-}
-
-.banner-button {
-  width: 10em;
-  text-align: center;
-  padding: 0.625em 1.25em;
-  background: #67809f;
-  border-radius: 0.35em;
-}
-
-.button {
-  color: #fff;
-  text-align: center;
-  padding: 0.625em 1.25em;
-  border-radius: 0.35em;
-}
-
-.service,
-.office {
-  padding: 15px;
-  justify-content: space-evenly;
-}
-
-.office {
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
-
-/* ================================= 
-  Media Queries
-==================================== */
-@media (min-width: 769px) {
-  .row {
-    width: 90%;
-    margin: 0 auto;
-  }
-  .tagline {
-    font-size: 1.4em;
-  }
-}
-@media (min-width: 1025px) {
-  .row {
-    width: 80%;
-    text-align: center;
-  }
+.nav-icon-7 {
+  color: #ce4125;
 }/*# sourceMappingURL=application.css.map */

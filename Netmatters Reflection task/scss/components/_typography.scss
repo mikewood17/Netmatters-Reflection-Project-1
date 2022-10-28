@@ -1,0 +1,30 @@
+
+.headings-container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.topic-header {
+    font-size: 40px;
+}
+.view-all {
+    font-size: 25px;
+}
+
+.article-heading{
+    color: #fff;
+    font-size: 2.5em;
+}
+.article-content{
+    font-size: 1.5em;
+}
+.client-quote{
+    font-size: 1.8em;
+    font-style: italic;
+}
+.quote-author{
+    font-size: 1.5em;
+    color: #a3a8ac;
+}

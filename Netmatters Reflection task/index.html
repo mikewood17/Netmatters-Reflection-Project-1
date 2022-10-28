@@ -9,144 +9,289 @@
 	<link rel="stylesheet" href="scss/flexbox.css">
 </head>
 <body>
-
-            <header class="main-header">
+        
+        <header class="main-header">
                 <div class="upper col-12">
                     <div class="name col-xs-3 col-sm-6 col-md-5 col-lg-4">
-                    <a href="#"><img src="../img/netmatters-logo.png"></a>
+                        <a href="#"><img src="../img/netmatters-logo.png"></a>
                     </div>
                     <div class="main-nav nav col-xs-3">
-                    <div class="container_button">
-                        <button class="button-1 nav-btn">
-                            <a href="#"><i class="fa-solid fa-computer-mouse"></i>Support</a>
-                        </button>
-                    <button class="button-2 nav-btn">
-                        <a href="#"><i class="fa-solid fa-paper-plane"></i></i>Contact</a>
-                    </button>
-                    
-                    <div class="search">
-                        <input type="text" class="search-bar" placeholder="Search...">
-                        <button type="submit" class="search-btn">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </div>
-                    <div>
-                        <a href="#" class="hamburger nav-btn"><i class="fa-solid fa-bars"></i></i></a>
-                    </div>
-                    </div>
+                        <div class="container_button">
+                            <button class="button-1 nav-btn">
+                                <a href="#"><i class="fa-solid fa-computer-mouse"></i>Support</a>
+                            </button>
+                            <button class="button-2 nav-btn">
+                                <a href="#"><i class="fa-solid fa-paper-plane"></i>Contact</a>
+                            </button>
+                        </div>
+                        <div class="important-nav">
+                            <div class="search">
+                                <input type="text" class="hidden-sm hidden-md search-bar" placeholder="Search...">
+                                <button type="submit" class="search-btn">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <a href="#" class="hamburger nav-btn"><i class="fa-solid fa-bars"></i></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="secondary-nav nav">
-                        <a class="item-1 top-nav" href="#">Bespoke<br>Software</a> 
-                        <a class="item-2 top-nav" href="#">IT<br>Support</a>  
-                        <a class="item-3 top-nav" href="#">Digital<br>Marketing</a>
-                        <a class="item-4 top-nav" href="#">Telecom<br>Services</a>
-                        <a class="item-5 top-nav" href="#">Web<br>Design</a>
-                        <a class="item-6 top-nav" href="#">Cyber<br>Security</a>
-                        <a class="item-7 top-nav" href="#">Developer<br>Course</a>
-                </div>
-            </header><!--/.main-header-->   
+                <div class="hidden-sm hidden-md hidden-lg search-mobile">
+                    <form class="search-form" action="#">
+                        <input class="search-bar-mobile" placeholder="Search..." type="text">
+                        <button type="submit" class="search-submit">
+                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </button>
+                    </form>
+                </div>  
+            <div class="secondary-nav nav">
+                <a class="item-1 top-nav" href="#"><i class="nav-icon-1 fa-solid fa-box-open"></i><br><small>Bespoke</small><br>Software</a> 
+                <a class="item-2 top-nav" href="#"><i class="nav-icon-2 fa-solid fa-desktop"></i><br><small>IT</small><br>Support</a>  
+                <a class="item-3 top-nav" href="#"><i class="nav-icon-3 fa-solid fa-chart-simple"></i><br><small>Digital</small><br>Marketing</a>
+                <a class="item-4 top-nav" href="#"><i class="nav-icon-4 fa-solid fa-phone"></i><br><small>Telecom</small><br>Services</a>
+                <a class="item-5 top-nav" href="#"><i class="nav-icon-5 fa-solid fa-code"></i><br><small>Web</small><br>Design</a>
+                <a class="item-6 top-nav" href="#"><i class="nav-icon-6 fa-solid fa-shield-halved"></i><br><small>Cyber</small><br>Security</a>
+                <a class="item-7 top-nav" href="#"><i class="nav-icon-7 fa-solid fa-graduation-cap"></i><br><small>Developer</small><br>Course</a>
+            </div>
+        </header><!--/.main-header-->  
+        
         
         
 
             <div class="banner">
                 <div class="banner-content">
-                <h1 class="headline">The East of England's Leading Technology Company</h1>
-                <span class="tagline">Performance-driven digital and technology services <br> with complete transparency.</span>
-                <br>
-                <br>
-                <div class="banner-button contact-us">
-                <a href="#">Contact us</a>
-                <i class="fa-solid fa-arrow-right"></i>
-                </div>
+                    <h1 class="headline">The East of England's Leading Technology Company</h1>
+                    <span class="tagline">Performance-driven digital and technology services <br> with complete transparency.</span>
+                    <br>
+                    <br>
+                    <div class="banner-button .btn-lg contact-us">
+                        <a href="#">Contact us</a>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
                 </div>
             </div><!--/.banner-->
 
 
-            <h1 class="subheading-1 subheading">Our Services</h1>
-                
-                <div class="row">		
-                    <div class="item-1 col">
-                        <div class="icon">
-                            <i class="fa-brands fa-uncharted"></i>
+            <div class="container our-services-container">
+                <div class="headings-container">
+                    <h2 class="topic-header">
+                        <strong>Our Services</strong>
+                    </h2>
+                    <h3 class="view-all">
+                        <a href="#">View All </a>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </h3>
+                </div>
+                    <div class="row">		
+                        <div class="item-1 col">
+                            <div class="icon-1 icon">
+                                <i class="fa-solid fa-box-open"></i>
+                            </div>
+                            <h2>Bespoke Software</h2>
+                            <p>Bespoke software solutions for all your business needs including integrations and reporting</p>
+                            <a class="learn-1 button" href="#">Learn More</a>
                         </div>
-                        <h2>Bespoke Software</h2>
-                        <p>Bespoke software solutions for all your business needs including integrations and reporting</p>
-                        <a class="learn-1 button" href="#">Learn More</a>
-                    </div>
-                    
-                    <div class="item-2 col">
-                        <div class="icon">
-                            <i class="fa-solid fa-desktop"></i>
-                        </div>
-                        <h2>IT Support</h2>
-                        <p>Fully managed IT support and consultancy packages tailored to meet your exact business needs.</p>
-                        <a class="learn-2 button" href="#">Learn More</a>
-                    </div>
                         
-                    <div class="item-3 col">
-                        <div class="icon">
-                            <i class="fa-solid fa-chart-simple"></i>
+                        <div class="item-2 col">
+                            <div class="icon-2 icon">
+                                <i class="fa-solid fa-desktop"></i>
+                            </div>
+                            <h2>IT Support</h2>
+                            <p>Fully managed IT support and consultancy packages tailored to meet your exact business needs.</p>
+                            <a class="learn-2 button" href="#">Learn More</a>
                         </div>
-                        <h2>Digital Marketing</h2>
-                        <p>Driven brand awareness and ROI through creative digital marketing campaigns.</p>
-                        <a class="learn-3 button" href="#">Learn More</a>
-                    </div>	
-                
-                    <div class="item-4 col">
-                        <div class="icon">
-                            <i class="fa-solid fa-phone"></i>
+                            
+                        <div class="item-3 col">
+                            <div class="icon-3 icon">
+                                <i class="fa-solid fa-chart-simple"></i>
+                            </div>
+                            <h2>Digital Marketing</h2>
+                            <p>Driven brand awareness and ROI through creative digital marketing campaigns.</p>
+                            <a class="learn-3 button" href="#">Learn More</a>
+                        </div>	
+                    
+                        <div class="item-4 col">
+                            <div class="icon-4 icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <h2>Telecom services</h2>
+                            <p>Business telephony solutions including mobile and connectivity solutions.</p>
+                            <a class="learn-4 button" href="#">Learn More</a>
+                        </div>	
+                        <div class="item-5 col">
+                            <div class="icon-5 icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <h2>Web Design</h2>
+                            <p>User-centric design for businesses looking to make a lasting impression.</p>
+                            <a class="learn-5 button" href="#">Learn More</a>
                         </div>
-                        <h2>Telecom services</h2>
-                        <p>Business telephony solutions including mobile and connectivity solutions.</p>
-                        <a class="learn-4 button" href="#">Learn More</a>
-                    </div>	
-                    <div class="item-5 col">
-                        <div class="icon">
-                            <i class="fa-solid fa-code"></i>
+                        <div class="item-6 col">
+                            <div class="icon-6 icon">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <h2>Cyber Security</h2>
+                            <p>Prevention, testing, consultancy and breach management services.</p>
+                            <a class=" learn-6 button" href="#">Learn More</a>
                         </div>
-                        <h2>Web Design</h2>
-                        <p>User-centric design for businesses looking to make a lasting impression.</p>
-                        <a class="learn-5 button" href="#">Learn More</a>
-                    </div>
-                    <div class="item-6 col">
-                        <div class="icon">
-                            <i class="fa-solid fa-shield-halved"></i>
+                    <div class="item-7 col">
+                        <div class="icon-7 icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
                         </div>
-                        <h2>Cyber Security</h2>
-                        <p>Prevention, testing, consultancy and breach management services.</p>
-                        <a class=" learn-6 button" href="#">Learn More</a>
+                        <h2>Developer Course</h2>
+                        <p>Web design and software training courses designed to secure a job in tech.</p>
+                        <a class="learn-7 button" href="#">Learn More</a>
+                        </div>
                     </div>
-                <div class="item-7 col">
-                    <div class="icon">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                    </div>
-                    <h2>Developer Course</h2>
-                    <p>Web design and software training courses designed to secure a job in tech.</p>
-                    <a class="learn-7 button" href="#">Learn More</a>
-                    </div>
-            </div>
-                
-                <div class="secondary-content content">
-                    <div class="article-1 article">
-                        <h2>Welcome to Netmatters</h2>
-                        <p>Netmatters is a leading Bespoke Software, IT Support, and               Digital Marketing company based in the East of England with                           offices in Cambridge, Wymondham, and Great Yarmouth.
-                            <br>
-                        We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.
-                            <br>
-                        We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
-                        <a class="button" href="#">Read More</a>
-                    </div>
-                    <div class="article-2 article">
-                    <h2>What Our Clients Think</h2>
-                        <p>Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in the East of England with offices in Cambridge, Wymondham, and Great Yarmouth.
+                </div>
+                    
+                    <div class="secondary-content content">
+                        <div class="article-1 article container">
+                            <h2 class="article-heading"><strong>Welcome to Netmatters</strong></h2>
+                            <p class="article-content"><strong>Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in the East of England with offices in Cambridge, Wymondham, and Great Yarmouth.</strong></p>
+                            
+                            <p class="article-content">We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.</p>
                                 <br>
-                        We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.
-                                <br>
-                        We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
-                        <p>Eleanor Bishop, Head of Marketing - Ashcroft Partnership LLP</p>
-                        <a class="button" href="#">Google Reviews</a>
-                        <a class="button" href="#">Trustpilot Reviews</a>
+                            <p class="article-content">We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
+                            <a class=" read-more review-btn button" href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="article-2 article container">
+                        <h2 class="article-heading"><strong>What Our Clients Think</strong></h2>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <br>
+                        <br>
+                        <p>
+                            <span class="client-quote">Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</span>
+                        </p>
+                        <p>
+                            <span class="quote-author">Eleanor Bishop, Head of Marketing - Ashcroft Partnership LLP</span>
+                        </p>
+                        <br>
+                        <div>
+                            <a class="g-reviews review-btn button" href="#">Google Reviews <i class="fa-solid fa-arrow-right"></i></a>
+                            <a class="t-reviews review-btn button" href="#">Trustpilot Reviews <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="latest-news">
+                        <div class="bar">
+                            <div class="container">
+                                <div class="headings-container">
+                                    <h2 class="topic-header">
+                                        <strong>Latest News</strong>
+                                    </h2>
+                                    <h3 class="view-all">
+                                        <a href="#">View All </a>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <div class="container">
+                                    <div class="news-list">
+                                        <div class="row">
+                                            <div class=" news news-1 col-lg-4 col-sm6">
+                                                <div class="item-digital">
+                                                    <a class="news-link" href="#"></a>
+                                                    <div class="img standard">
+                                                        <a href="#">
+                                                            <img class="news-img" src="../img/news-img-1.webp" alt="6 steps you can do to make your website more visible on Google">
+                                                        </a>
+                                                    </div>
+                                                    <div class="block">
+                                                        <h3>
+                                                            <a href="#">6 Steps you can do to make your website more...</a>
+                                                        </h3>
+                                                        <p>
+                                                            Making your website more visible on Google is one of the most important factors in getting leads through...
+                                                        </p>
+                                                        <a class="button" href="#">
+                                                            Read More
+                                                        </a>
+                                                       <div class="user">
+                                                        <div class="avatar">
+                                                            <img src="../img/netmatters-logo.webp">
+                                                        </div>
+                                                        <div class="details">
+                                                            <strong>Posted by Netmatters</strong>
+                                                            " 25th October 2022 "
+                                                        </div>
+                                                       </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" news news-2 col-lg-4 col-sm6">
+                                                <div class="item-digital">
+                                                    <a class="news-link" href="#"></a>
+                                                    <div class="img standard">
+                                                        <a href="#">
+                                                            <img class="news-img" src="../img/news-img-1.webp" alt="6 steps you can do to make your website more visible on Google">
+                                                        </a>
+                                                    </div>
+                                                    <div class="block">
+                                                        <h3>
+                                                            <a href="#">6 Steps you can do to make your website more...</a>
+                                                        </h3>
+                                                        <p>
+                                                            Making your website more visible on Google is one of the most important factors in getting leads through...
+                                                        </p>
+                                                        <a class="button" href="#">
+                                                            Read More
+                                                        </a>
+                                                       <div class="user">
+                                                        <div class="avatar">
+                                                            <img src="../img/netmatters-logo.webp">
+                                                        </div>
+                                                        <div class="details">
+                                                            <strong>Posted by Netmatters</strong>
+                                                            " 25th October 2022 "
+                                                        </div>
+                                                       </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" news news-3 hidden-md col-lg-4 col-sm6">
+                                                <div class="item-digital">
+                                                    <a class="news-link" href="#"></a>
+                                                    <div class="img standard">
+                                                        <a href="#">
+                                                            <img class="news-img" src="../img/news-img-1.webp" alt="6 steps you can do to make your website more visible on Google">
+                                                        </a>
+                                                    </div>
+                                                    <div class="block">
+                                                        <h3>
+                                                            <a href="#">6 Steps you can do to make your website more...</a>
+                                                        </h3>
+                                                        <p>
+                                                            Making your website more visible on Google is one of the most important factors in getting leads through...
+                                                        </p>
+                                                        <a class="button" href="#">
+                                                            Read More
+                                                        </a>
+                                                       <div class="user">
+                                                        <div class="avatar">
+                                                            <img src="../img/netmatters-logo.webp">
+                                                        </div>
+                                                        <div class="details">
+                                                            <strong>Posted by Netmatters</strong>
+                                                            " 25th October 2022 "
+                                                        </div>
+                                                       </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
                     </div>
                 </div>
 
