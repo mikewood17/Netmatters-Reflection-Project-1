@@ -20,6 +20,21 @@
     .search {
         display: none;
     }
+    hidden-xs{
+        display: none;
+    }
+    .article p, h2{
+        font-size: 1em;
+    }
+    .client-quote, 
+    .quote-author {
+        font-size: 1.2em;
+    }
+    .privacy-policy{
+        font-size: 1em;
+        font-weight: 300;
+    }
+
 }
 @media (min-width: 769px) {
 
@@ -33,6 +48,10 @@
 	}
     .container {
         max-width: 740px;
+    }
+
+    .banner{
+        min-height: 700px;
     }
 
 	.main-header {
@@ -70,9 +89,6 @@
     .secondary-nav {
        display: none;
     }
-    .signup{
-    text-align: center;
-    }
     .container_button {
         display: none;
     }
@@ -89,6 +105,9 @@
     }
     .item-3 {
         flex: 1 250px;
+    }
+    .news-container{
+        flex-direction: row;
     }
 }
 
@@ -117,11 +136,6 @@
     .imporant-nav {
         display: flex;
     }
-
-    .office,
-    .service {
-        display: flex;
-    }
     .secondary-nav {
         display: flex;
     }
@@ -132,9 +146,9 @@
         display: none;
     }
 
-    .item-3 {
+    /* .item-3 {
         flex: 1 250px;
-    }
+    } */
 }
 
 
@@ -157,7 +171,7 @@
         display: inline-flex;
     }
     .headline{
-        font-size: 4rem;
+        font-size: 3rem;
         line-height: 5rem;
     }
     .tagline {
@@ -187,10 +201,14 @@
     }
     .sign-up-container{
         display: flex;
-        justify-content:space-around;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
     }
-    .sign-up-button-container{
-        text-align: center;
+    .sign-up-input {
+        flex: 1 1 450px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .service {
@@ -226,5 +244,9 @@
     .item-6,
     .item-7 {
         flex: 1 250px;
+    }
+
+    .news-3{
+        display: flex;
     }
 }

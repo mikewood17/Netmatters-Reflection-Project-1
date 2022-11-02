@@ -9,7 +9,7 @@
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.2px;
   font-weight: 1rem;
   line-height: 1.6;
   color: #3a3a3a;
@@ -31,8 +31,7 @@ ul {
 }
 
 p {
-  font-size: 0.95em;
-  margin: 0 0 1em 0;
+  font-size: 1em;
 }
 
 h2,
@@ -48,7 +47,6 @@ h3 {
 
 .subheading {
   margin-bottom: 20px;
-  margin-left: 20px;
 }
 
 a {
@@ -58,7 +56,11 @@ a {
 /* ----- Layout Imports ----- */
 /* ---- Article Styling ---- */
 .banner {
-  background: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-oaVs.webp") center/cover no-repeat;
+  background: linear-gradient(270deg, transparent 25%, #000), url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-oaVs.webp") center/cover no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
   padding: 3.2em 0;
   margin-bottom: 48px;
   display: flex;
@@ -69,7 +71,10 @@ a {
 
 .banner-content {
   color: #fff;
-  margin: 5em 10em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 }
 .banner-content a {
   color: #fff;
@@ -79,16 +84,23 @@ a {
   padding: 1em;
   background: #edf4f7;
   border-radius: 0.35em;
-  margin: 0 0.5em 0.8em;
+  margin: 1.5em 0.8em 0.8em;
   border: 1px solid #999aa2;
   justify-content: center;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+.col:hover {
+  border-color: transparent;
+  top: -10px;
+  transition: 0.5s ease;
 }
 
 .news {
-  width: 30%;
-  background: #edf4f7;
+  width: 80%;
+  background: #fff;
   margin: 0 0.5em 0.8em;
   border: 1px solid #999aa2;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 
 .news-1 {
@@ -126,6 +138,7 @@ a {
   color: #fff;
   background-color: #333645;
   text-align: justify;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
@@ -159,7 +172,7 @@ a {
 .user_name,
 .user_email {
   height: 50px;
-  width: 300px;
+  width: 100%;
   font-size: 1em;
   box-shadow: #3a3a3a;
 }
@@ -175,6 +188,22 @@ a {
   padding-right: 15px;
 }
 
+.headings-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.search {
+  display: flex;
+}
+
+.search-form {
+  margin-top: 11px;
+  position: relative;
+}
+
 .our-services-container {
   margin-bottom: 50px;
 }
@@ -183,9 +212,40 @@ a {
   margin-bottom: 50px;
 }
 
-.search-form {
-  margin-top: 11px;
-  position: relative;
+.review-btn-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+}
+
+.news {
+  margin-bottom: 40px;
+}
+
+.user {
+  width: 100%;
+  display: flex;
+}
+
+.details {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.offices,
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .main-footer {
@@ -268,8 +328,8 @@ a {
   text-transform: uppercase;
 }
 
-.nav a:hover {
-  color: #093a58;
+.nav-icon:hover {
+  color: #fff;
 }
 
 /* ----- Component Imports ----- */
@@ -289,7 +349,9 @@ a {
   padding: 5px 20px;
   background: #67809f;
   border-radius: 0.35em;
-  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .button {
@@ -356,14 +418,6 @@ a {
   outline: none;
 }
 
-.hamburger {
-  color: #fff;
-  background-color: #333645;
-  border-radius: 5%;
-  width: 60px;
-  font-size: 25px;
-}
-
 .button-1 {
   background-color: #4183d7;
   border-color: #4183d7;
@@ -385,9 +439,18 @@ a {
 .button-1 a, .button-2 a {
   display: flex;
   gap: 10px;
+  justify-content: space-around;
 }
 
 .checkbox {
+  border-radius: 3px;
+  border: 3px solid #333645;
+  height: 32px;
+  width: 32px;
+  position: relative;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
   cursor: pointer;
 }
 .checkbox:hover {
@@ -407,16 +470,33 @@ a {
 .g-reviews {
   background-color: rgb(67, 135, 246);
   margin-right: 8px;
+  margin-bottom: 20px;
 }
 
 .t-reviews {
   background-color: rgb(0, 182, 123);
+  margin-bottom: 20px;
 }
 
 .fa-star {
   font-size: 50px;
   color: orange;
   margin-bottom: 25px;
+}
+
+.hamburger {
+  color: #fff;
+  background-color: #333645;
+  border-radius: 5%;
+  width: 60px;
+  font-size: 25px;
+}
+
+.phone-icon {
+  display: block;
+  width: 60px;
+  font-size: 35px;
+  width: 100%;
 }
 
 .icon {
@@ -431,16 +511,8 @@ a {
   color: #fff;
 }
 
-/* ---- hover styling ---- */
 .col:hover .icon {
   background-color: #fff;
-}
-
-.headings-container {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 50px;
-  margin-right: 50px;
 }
 
 .topic-header {
@@ -451,6 +523,11 @@ a {
   font-size: 25px;
 }
 
+.headline,
+.tagline {
+  margin-left: 1.25em;
+}
+
 .article-heading {
   color: #fff;
   font-size: 2.5em;
@@ -458,6 +535,9 @@ a {
 
 .article-content {
   font-size: 1.5em;
+}
+.article-content p {
+  margin: 0 1.5em 1em 1.5em;
 }
 
 .client-quote {
@@ -470,8 +550,42 @@ a {
   color: #a3a8ac;
 }
 
+.details {
+  font-size: 1.2em;
+}
+
+.subheading-2 {
+  font-size: 2em;
+  color: #333645;
+  font-weight: 400;
+}
+
+.sign-up-input h3 {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.sign-up-button-container {
+  font-size: 1.3em;
+  color: #333645;
+}
+.sign-up-button-container i {
+  color: #fff;
+}
+
+.privacy-policy {
+  color: #333645;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
 .news-img {
   max-width: 100%;
+}
+
+.top-logo {
+  max-width: 100%;
+  display: block;
 }
 
 .item-1 a {
@@ -500,6 +614,9 @@ a {
 .nav-icon-1 {
   color: #67809f;
 }
+.nav-icon-1:hover {
+  color: #fff;
+}
 
 .item-2 a {
   background-color: #4183d7;
@@ -526,6 +643,9 @@ a {
 
 .nav-icon-2 {
   color: #4183d7;
+}
+.nav-icon-2:hover {
+  color: #fff;
 }
 
 .item-3 a {
@@ -554,6 +674,9 @@ a {
 .nav-icon-3 {
   color: #2ecc71;
 }
+.nav-icon-3:hover {
+  color: #fff;
+}
 
 .item-4 a {
   background-color: #d64541;
@@ -580,6 +703,9 @@ a {
 
 .nav-icon-4 {
   color: #d64541;
+}
+.nav-icon-4:hover {
+  color: #fff;
 }
 
 .item-5 a {
@@ -608,6 +734,9 @@ a {
 .nav-icon-5 {
   color: #926fb1;
 }
+.nav-icon-5:hover {
+  color: #fff;
+}
 
 .item-6 a {
   background-color: #f62459;
@@ -635,6 +764,9 @@ a {
 .nav-icon-6 {
   color: #f62459;
 }
+.nav-icon-6:hover {
+  color: #fff;
+}
 
 .item-7 a {
   background-color: #ce4125;
@@ -661,4 +793,7 @@ a {
 
 .nav-icon-7 {
   color: #ce4125;
+}
+.nav-icon-7:hover {
+  color: #fff;
 }/*# sourceMappingURL=application.css.map */

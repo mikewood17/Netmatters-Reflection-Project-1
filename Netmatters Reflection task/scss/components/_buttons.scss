@@ -1,4 +1,6 @@
-
+// =================================================
+// Buttons
+//==================================================
 
 
 .signup-button{
@@ -16,7 +18,9 @@
 	padding: 5px 20px;
 	background: #67809f;
 	border-radius: .35em;
-    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .button {
 	color: #fff;
@@ -75,13 +79,7 @@
     font-size: 20px;
     outline: none;
 }
-.hamburger{
-    color: #fff;
-    background-color: #333645;
-    border-radius: 5%;
-    width: 60px;
-    font-size: 25px;
-}
+
 .button-1 {
     background-color: #4183d7;
     border-color: #4183d7;
@@ -101,8 +99,17 @@
 .button-1 a, .button-2 a{
     display: flex;
     gap: 10px;
+    justify-content: space-around;
 }
 .checkbox {
+    border-radius: 3px;
+    border: 3px solid #333645;
+    height: 32px;
+    width: 32px;
+    position: relative;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
     cursor: pointer;
     &:hover {
         background-color: #3a3a3a;
@@ -121,7 +128,9 @@
 .g-reviews{
     background-color: rgb(67, 135, 246);
     margin-right: 8px;
+    margin-bottom: 20px;
 }
 .t-reviews {
     background-color: rgb(0, 182, 123);
+    margin-bottom: 20px;
 }

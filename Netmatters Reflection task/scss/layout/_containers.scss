@@ -1,3 +1,8 @@
+//===============================================
+// Containers 
+//===============================================
+
+// Base Containers
 
 .container{
     margin-right: auto;
@@ -5,6 +10,24 @@
     padding-left: 15px;
     padding-right: 15px;
 }
+
+// Headings container
+.headings-container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.search {
+    display: flex;
+}
+
+.search-form{
+    margin-top: 11px;
+    position: relative;
+}
+
+// Primary content container
 
 .our-services-container{
     margin-bottom: 50px;
@@ -14,7 +37,42 @@
     margin-bottom: 50px;
 }
 
-.search-form{
-    margin-top: 11px;
-    position: relative;
+// secondary content container
+
+.review-btn-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+// News section container
+
+.news-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+.news{
+    margin-bottom: 40px;
+}
+
+.user{
+    width: 100%;
+    display: flex;
+}
+.details {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+// Footer container
+
+.offices,
+.services{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }

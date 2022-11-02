@@ -35,5 +35,10 @@
     }
     .nav-icon-#{$i} {
             color: $color;
+            
+            &:hover {
+                color:#fff;
+            }
+
     }
 }
