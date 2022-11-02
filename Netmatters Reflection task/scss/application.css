@@ -81,18 +81,20 @@ a {
 }
 
 .col {
-  padding: 1em;
+  padding: 30px;
   background: #edf4f7;
-  border-radius: 0.35em;
+  border-radius: 15px;
   margin: 1.5em 0.8em 0.8em;
   border: 1px solid #999aa2;
-  justify-content: center;
+  text-align: center;
+  top: 0;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  transition: 0.5s, ease;
 }
 .col:hover {
   border-color: transparent;
   top: -10px;
-  transition: 0.5s ease;
+  transition: 0.5s, ease;
 }
 
 .news {
@@ -232,6 +234,7 @@ a {
 .user {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .details {
@@ -500,6 +503,7 @@ a {
 }
 
 .icon {
+  margin-bottom: 20px;
   line-height: unset;
   display: flex;
   justify-content: center;

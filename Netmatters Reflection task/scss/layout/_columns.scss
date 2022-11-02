@@ -25,17 +25,19 @@
 }
 
 .col {
-	padding: 1em;
+	padding: 30px;
 	background: #edf4f7;
-	border-radius: .35em;
+	border-radius: 15px;
 	margin: 1.5em .8em .8em;
     border: 1px solid #999aa2;
-    justify-content: center;
+    text-align: center;
+    top: 0;
     box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
+    transition: .5s, ease;
     &:hover {
         border-color: transparent;
         top: -10px;
-        transition: .5s ease;
+        transition: .5s, ease;
     }
 }
 .news{
