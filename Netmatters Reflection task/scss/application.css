@@ -82,19 +82,19 @@ a {
 
 .col {
   padding: 30px;
-  background: #edf4f7;
   border-radius: 15px;
   margin: 1.5em 0.8em 0.8em;
   border: 1px solid #999aa2;
   text-align: center;
+  position: relative;
   top: 0;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
-  transition: 0.5s, ease;
+  transition: 0.5s ease;
 }
 .col:hover {
   border-color: transparent;
   top: -10px;
-  transition: 0.5s, ease;
+  transition: 0.5s ease !important;
 }
 
 .news {
