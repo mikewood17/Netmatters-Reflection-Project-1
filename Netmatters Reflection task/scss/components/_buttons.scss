@@ -102,8 +102,6 @@
     justify-content: space-around;
 }
 .checkbox {
-    border-radius: 3px;
-    border: 3px solid #333645;
     height: 32px;
     width: 32px;
     position: relative;
@@ -111,8 +109,9 @@
     margin-right: 30px;
     margin-bottom: 30px;
     cursor: pointer;
-    &:hover {
-        background-color: #3a3a3a;
+    &:checked {
+        background-color: #333645 !important;
+        border-color: #333645 !important;
     }
 }
 

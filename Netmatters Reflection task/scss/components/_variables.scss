@@ -33,12 +33,17 @@
     .icon-#{$i} {
         background-color: $color;
     }
-    .nav-icon-#{$i} {
+    .nav-item-#{$i} {
+        i{
             color: $color;
-            
-            &:hover {
-                color:#fff;
+        }
+        &:hover {
+            background-color: $color;
+            color:#fff;
+            i {
+                color: #fff;
             }
+        }
 
     }
 }
