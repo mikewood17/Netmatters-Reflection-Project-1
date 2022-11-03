@@ -154,6 +154,12 @@
 
 @media (min-width: 1250px) {
 
+    .secondary-nav,
+    .container_button,
+    .important-nav,
+    .news-3 {
+        display: flex;
+    }
     .container {
         max-width: 1200px;
     }
@@ -161,12 +167,6 @@
 		flex-direction: row;
 		justify-content: space-between;
 	    }
-    .secondary-nav {
-        display:flex;
-        flex-wrap: nowrap;
-        position: relative;
-        flex-direction: row;
-    }
     .search-bar{
         display: inline-flex;
     }
@@ -221,12 +221,7 @@
         flex-wrap: wrap;
         flex-direction: row;
     }
-    .container_button {
-        display: flex;
-    }
-    .imporant-nav {
-        display: flex;
-    }
+    
     .view-all {
         display: block;
     }
@@ -246,7 +241,4 @@
         flex: 1 250px;
     }
 
-    .news-3{
-        display: flex;
-    }
 }

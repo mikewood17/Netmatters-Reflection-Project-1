@@ -214,6 +214,23 @@ a {
   position: relative;
 }
 
+.secondary-nav {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1.125rem;
+  width: 100%;
+  background-color: #333645;
+}
+.secondary-nav a {
+  color: #fff;
+}
+.secondary-nav:hover {
+  color: #fff;
+}
+
 .our-services-container {
   margin-bottom: 50px;
 }
@@ -312,20 +329,6 @@ a {
 
 .important-nav {
   display: flex;
-}
-
-.secondary-nav {
-  display: flex;
-  justify-content: center;
-  font-size: 1.125rem;
-  width: 100%;
-  background-color: #333645;
-}
-.secondary-nav a {
-  color: #fff;
-}
-.secondary-nav:hover {
-  color: #fff;
 }
 
 .name a,
