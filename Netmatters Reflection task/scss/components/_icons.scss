@@ -37,3 +37,15 @@
         background-color: #fff ;
     }
 }
+.social{
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 7px 10px 10px;
+    max-height: 38px;
+}
+.required:after{
+    content: " *";
+    color: #d24d57;
+}
