@@ -54,6 +54,17 @@
     .button-#{$i} {
         &:hover {
             background-color: $color;
+            text-decoration: none;
+        }
+    }
+}
+@each $name, $color in $social-colors {
+    $i: index($social-colors, $name $color);
+    .social-#{$i} {
+        &:hover {
+            background-color: $color;
+            border-radius: 50%;
+            text-decoration: none;
         }
     }
 }

@@ -52,9 +52,6 @@ h3 {
 a {
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
-}
 
 /* ----- Layout Imports ----- */
 /* ---- Article Styling ---- */
@@ -595,6 +592,10 @@ a:hover {
   margin-left: 1.25em;
 }
 
+.view-all:hover {
+  text-decoration: underline;
+}
+
 .article-heading {
   color: #fff;
   font-size: 2.5em;
@@ -902,36 +903,69 @@ a:hover {
 
 .button-1:hover {
   background-color: #2a63ac;
+  text-decoration: none;
 }
 
 .button-2:hover {
   background-color: #74747a;
+  text-decoration: none;
 }
 
 .button-3:hover {
   background-color: #74747a;
+  text-decoration: none;
 }
 
 .button-4:hover {
   background-color: #23252f;
+  text-decoration: none;
 }
 
 .button-5:hover {
   background-color: #415063;
+  text-decoration: none;
 }
 
 .button-6:hover {
   background-color: #121318;
+  text-decoration: none;
 }
 
 .button-7:hover {
   background-color: #166af4;
+  text-decoration: none;
 }
 
 .button-8:hover {
   background-color: #009b69;
+  text-decoration: none;
 }
 
 .button-9:hover {
   background-color: #22242e;
+  text-decoration: none;
+}
+
+.social-1:hover {
+  background-color: #3b5998;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.social-2:hover {
+  background-color: #00aced;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.social-3:hover {
+  background-color: #d93175;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.social-4:hover {
+  background-color: #0077b5;
+  border-radius: 50%;
+  text-decoration: none;
 }/*# sourceMappingURL=application.css.map */

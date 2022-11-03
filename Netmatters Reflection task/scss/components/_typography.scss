@@ -19,6 +19,11 @@
     margin-left: 1.25em;
 }
 
+.view-all{
+    &:hover {
+        text-decoration: underline;
+    }
+}
 
 // secondary content area
 
