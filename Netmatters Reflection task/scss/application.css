@@ -232,6 +232,7 @@ a:hover {
 }
 .secondary-nav:hover {
   color: #fff;
+  text-decoration: none;
 }
 
 .our-services-container {
@@ -373,6 +374,7 @@ a:hover {
   height: 47px;
   padding: 5px 15px;
   border-color: #ccc;
+  border: 1px solid #e5e5e5;
 }
 .form-control:focus {
   border-color: #5bc0de;
@@ -407,6 +409,9 @@ a:hover {
   padding: 0.625em 1.25em;
   border-radius: 0.35em;
 }
+.button:hover {
+  text-decoration: none;
+}
 
 .btn-lg {
   height: auto;
@@ -432,7 +437,6 @@ a:hover {
   height: 56px;
   width: 240px;
   margin-left: 10px;
-  border: 1px solid #e5e5e5;
 }
 
 .search-btn {
@@ -680,6 +684,7 @@ a:hover {
 .nav-item-1:hover {
   background-color: #67809f;
   color: #fff;
+  text-decoration: none;
 }
 .nav-item-1:hover i {
   color: #fff;
@@ -714,6 +719,7 @@ a:hover {
 .nav-item-2:hover {
   background-color: #4183d7;
   color: #fff;
+  text-decoration: none;
 }
 .nav-item-2:hover i {
   color: #fff;
@@ -748,6 +754,7 @@ a:hover {
 .nav-item-3:hover {
   background-color: #2ecc71;
   color: #fff;
+  text-decoration: none;
 }
 .nav-item-3:hover i {
   color: #fff;
@@ -782,6 +789,7 @@ a:hover {
 .nav-item-4:hover {
   background-color: #d64541;
   color: #fff;
+  text-decoration: none;
 }
 .nav-item-4:hover i {
   color: #fff;
@@ -816,6 +824,7 @@ a:hover {
 .nav-item-5:hover {
   background-color: #926fb1;
   color: #fff;
+  text-decoration: none;
 }
 .nav-item-5:hover i {
   color: #fff;
@@ -850,6 +859,7 @@ a:hover {
 .nav-item-6:hover {
   background-color: #f62459;
   color: #fff;
+  text-decoration: none;
 }
 .nav-item-6:hover i {
   color: #fff;
@@ -884,7 +894,44 @@ a:hover {
 .nav-item-7:hover {
   background-color: #ce4125;
   color: #fff;
+  text-decoration: none;
 }
 .nav-item-7:hover i {
   color: #fff;
+}
+
+.button-1:hover {
+  background-color: #2a63ac;
+}
+
+.button-2:hover {
+  background-color: #74747a;
+}
+
+.button-3:hover {
+  background-color: #74747a;
+}
+
+.button-4:hover {
+  background-color: #23252f;
+}
+
+.button-5:hover {
+  background-color: #415063;
+}
+
+.button-6:hover {
+  background-color: #121318;
+}
+
+.button-7:hover {
+  background-color: #166af4;
+}
+
+.button-8:hover {
+  background-color: #009b69;
+}
+
+.button-9:hover {
+  background-color: #22242e;
 }/*# sourceMappingURL=application.css.map */
